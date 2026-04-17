@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import { ThemeProvider, CssBaseline, Box, CircularProgress } from '@mui/material';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { lightTheme, darkTheme } from './theme/theme';
 import AppShell from './components/layout/AppShell';
 import DashboardPage from './components/dashboard/DashboardPage';
@@ -43,7 +43,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route
             element={
@@ -57,7 +57,7 @@ export default function App() {
             <Route path="vacation/:id" element={<VacationReport vacations={vacations} />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
   );
 }
