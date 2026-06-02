@@ -52,6 +52,7 @@ export const darkTheme = createTheme({
 
 export const CATEGORY_COLORS: Record<string, string> = {
   transport: '#1E88E5',
+  gas: '#FFC107',
   accommodation: '#8E24AA',
   food: '#FB8C00',
   flights: '#00897B',

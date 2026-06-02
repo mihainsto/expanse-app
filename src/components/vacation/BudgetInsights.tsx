@@ -41,7 +41,10 @@ export default function BudgetInsights({ vacation }: Props) {
   const avgFoodPerDay = days > 0 ? totalFood / days : 0;
 
   const fuelExpenses = vacation.expenses.filter(
-    (e) => e.category === 'transport' && e.description.toLowerCase().includes('diesel')
+    (e) =>
+      e.category === 'gas' ||
+      (e.category === 'transport' &&
+        /(diesel|fuel|gas|petrol|benzin)/i.test(e.description))
   );
   const totalFuel = fuelExpenses.reduce((s, e) => s + e.amount, 0);
 

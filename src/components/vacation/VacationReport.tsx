@@ -25,6 +25,7 @@ import BudgetInsights from './BudgetInsights';
 
 const DESTINATION_GRADIENTS: Record<string, string> = {
   Morocco: 'linear-gradient(135deg, #E65100 0%, #FF8F00 40%, #FFD54F 100%)',
+  Balkans: 'linear-gradient(135deg, #1A237E 0%, #283593 35%, #00838F 75%, #4DD0E1 100%)',
   default: 'linear-gradient(135deg, #00897B 0%, #26A69A 50%, #80CBC4 100%)',
 };
 

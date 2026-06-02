@@ -3,6 +3,7 @@ export type Category =
   | 'accommodation'
   | 'food'
   | 'transport'
+  | 'gas'
   | 'insurance'
   | 'activities'
   | 'shopping'
@@ -16,6 +17,13 @@ export interface Expense {
   amount: number;
 }
 
+export interface ItineraryDay {
+  date: string;
+  from: string;
+  to: string;
+  km: number;
+}
+
 export interface Vacation {
   id: string;
   title: string;
@@ -27,6 +35,7 @@ export interface Vacation {
   travelers: number;
   tags: string[];
   notes?: string;
+  itinerary?: ItineraryDay[];
   expenses: Expense[];
 }
 

@@ -3,6 +3,7 @@ import FlightTakeoffIcon from '@mui/icons-material/FlightTakeoff';
 import HotelIcon from '@mui/icons-material/Hotel';
 import RestaurantIcon from '@mui/icons-material/Restaurant';
 import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
+import LocalGasStationIcon from '@mui/icons-material/LocalGasStation';
 import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
 import LocalActivityIcon from '@mui/icons-material/LocalActivity';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
@@ -16,6 +17,7 @@ const ICON_MAP: Record<Category, React.ReactElement> = {
   accommodation: <HotelIcon fontSize="small" />,
   food: <RestaurantIcon fontSize="small" />,
   transport: <DirectionsCarIcon fontSize="small" />,
+  gas: <LocalGasStationIcon fontSize="small" />,
   insurance: <HealthAndSafetyIcon fontSize="small" />,
   activities: <LocalActivityIcon fontSize="small" />,
   shopping: <ShoppingBagIcon fontSize="small" />,
@@ -25,8 +27,9 @@ const ICON_MAP: Record<Category, React.ReactElement> = {
 const CATEGORY_LABELS: Record<Category, string> = {
   flights: 'Flights',
   accommodation: 'Accommodation',
-  food: 'Food & Dining',
+  food: 'Groceries & Food',
   transport: 'Transport',
+  gas: 'Gas & Tolls',
   insurance: 'Insurance',
   activities: 'Activities',
   shopping: 'Shopping',
